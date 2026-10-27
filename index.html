@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Victoria Bikes — Coming Soon</title>
+  <meta name="description" content="Custom plasma LED installs and family-friendly night rides in Victoria, Texas. Coming soon.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;600;700&family=Rock+Salt&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --pink: #E85C93;
+      --pink-strong: #E02B74;
+      --teal: #40BFCF;
+      --purple: #7A6CFF;
+      --text: #F4F6FB;
+      --muted: #C9D0DC;
+      --grad: linear-gradient(90deg, var(--pink), var(--teal), var(--purple));
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body {
+      margin: 0;
+      min-height: 100%;
+    }
+
+    body {
+      font-family: "Epilogue", sans-serif;
+      color: var(--text);
+      background: #05060a;
+    }
+
+    .page {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 32px 20px;
+      background:
+        linear-gradient(180deg, rgba(5, 6, 10, 0.42) 0%, rgba(5, 6, 10, 0.78) 100%),
+        url("hero.jpg") center / cover no-repeat;
+    }
+
+    .card {
+      width: min(760px, 100%);
+      text-align: center;
+      padding: 36px 28px 28px;
+      border-radius: 18px;
+      background: rgba(10, 12, 18, 0.72);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      box-shadow: 0 18px 48px rgba(0, 0, 0, 0.35);
+      backdrop-filter: blur(10px);
+    }
+
+    .kicker {
+      display: inline-block;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      background-image: linear-gradient(90deg, var(--pink), var(--teal));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    h1 {
+      font-family: "Rock Salt", cursive;
+      font-size: clamp(36px, 7vw, 68px);
+      font-weight: 400;
+      line-height: 1.2;
+      margin: 16px 0 10px;
+      color: var(--pink-strong);
+    }
+
+    .soon {
+      margin: 0 0 18px;
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      background-image: var(--grad);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .sub {
+      margin: 0 auto 26px;
+      max-width: 620px;
+      font-size: clamp(16px, 2vw, 19px);
+      line-height: 1.55;
+      color: var(--muted);
+    }
+
+    .ctas {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 14px;
+      margin-bottom: 18px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 26px;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: 700;
+      text-decoration: none;
+      transition: all 0.25s ease;
+    }
+
+    .btn-primary {
+      color: #fff;
+      background: var(--grad);
+    }
+
+    .btn-primary:hover {
+      color: #111;
+      background: #fff;
+    }
+
+    .btn-outline {
+      color: #fff;
+      border: 1px solid transparent;
+      background:
+        linear-gradient(rgba(10, 12, 18, 0.85), rgba(10, 12, 18, 0.85)) padding-box,
+        var(--grad) border-box;
+    }
+
+    .btn-outline:hover {
+      color: #fff;
+      background: var(--grad);
+    }
+
+    .meta {
+      font-size: 15px;
+      color: var(--muted);
+    }
+
+    .meta a {
+      color: var(--pink);
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .meta a:hover {
+      color: var(--teal);
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <section class="card">
+      <span class="kicker">Plasma LEDs • Family-Friendly Rides</span>
+      <h1>Light Up the Night</h1>
+      <p class="soon">Coming soon</p>
+      <p class="sub">
+        Custom plasma LED installs with CCLED gear from Corpus Christi. From BMX and cruisers to e-bikes, Harleys, and golf carts—we make every ride glow.
+        Join our near-nightly, family-friendly rides and roll with the brightest crew in Victoria.
+      </p>
+      <div class="ctas">
+        <a class="btn btn-primary" href="mailto:hello@victoriabikes.com?subject=Custom%20Quote%20Request&amp;body=Hi%20Victoria%20Bikes%2C%0D%0A%0D%0AI%27d%20like%20a%20custom%20quote.%20Here%20are%20my%20details%3A%0D%0A%0D%0AVehicle%20Type%3A%20Bike%20%2F%20Motorcycle%20%2F%20Golf%20Cart%20(other%3F)%0D%0ALighting%20Wanted%3A%20Frame%20Lights%20%2F%20Wheel%20Lights%20%2F%20Both%0D%0AOther%20Preferences%3A%20Color%20choice%2C%20single%20or%20dual%20strips%2C%20etc.%0D%0A%0D%0AThanks!">Get a Custom Quote</a>
+        <a class="btn btn-outline" href="https://www.facebook.com/victoriatxbikes" target="_blank" rel="noopener">Join Tonight’s Ride</a>
+      </div>
+      <p class="meta">
+        Text/Call <a href="tel:3612121219">(361) 212-1219</a>
+        •
+        <a href="mailto:hello@victoriabikes.com">hello@victoriabikes.com</a>
+      </p>
+    </section>
+  </main>
+</body>
+</html>
