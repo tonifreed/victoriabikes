@@ -22,3 +22,11 @@ Quote requests are prepared locally, then sent by the visitor using their own em
 Night-ride buttons link to the existing Victoria Bikes Facebook page for current meetup information. No fixed event schedule is claimed.
 
 Fonts load from Google Fonts, with system fallbacks when unavailable. All displayed photography is served locally from optimized copies of the supplied originals.
+
+## Photo gallery and source status
+
+The gallery currently contains six photos: the five original project photos plus the lead photo publicly exposed by `https://www.facebook.com/victoriatxbikes/photos`, retrieved October 27, 2026 (America/Chicago). That Facebook photo is saved as `assets/gallery/ready-to-roll.jpg`. The full Facebook album and poster text were not available through the retrieval tools; this is not a complete album import.
+
+The gallery supports a native modal photo viewer, previous/next controls, left/right arrow keys, Escape to close, and links to each image without JavaScript. Image captions describe visible content; they do not claim dates or specific event names.
+
+Ride information uses the details supplied for this project. Exact ride times and meetup locations still need the poster source files or owner confirmation. Do not infer a current recurring schedule from undated or one-off event posters. Apply the existing website styling to the verified poster information rather than copying poster artwork into the page layout.

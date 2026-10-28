@@ -15,18 +15,28 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@800;900&family=Epilogue:wght@400;500;600;700;800&family=Rock+Salt&display=swap" rel="stylesheet">
   <link rel="preload" as="image" href="assets/led-cruiser.jpg" fetchpriority="high">
-  <link rel="stylesheet" href="styles.css">
-  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="styles.css?v=gallery-1">
+  <script src="script.js?v=gallery-1" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
     <a class="wordmark" href="#" aria-label="Victoria Bikes home">VICTORIA BIKES<span class="brand-dot" aria-hidden="true">.</span></a>
-    <nav aria-label="Main navigation" id="main-nav"><a href="#custom-leds">Custom LEDs</a><a href="#night-rides">Night Rides</a><a href="#our-story">Our Story</a></nav>
+    <nav aria-label="Main navigation" id="main-nav"><a href="#custom-leds">Custom LEDs</a><a href="#night-rides">Night Rides</a><a href="#gallery">Gallery</a><a href="#our-story">Our Story</a></nav>
     <a class="button button-pink header-cta" href="#quote">Get a Custom Quote <span aria-hidden="true">↗</span></a>
     <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Open navigation"><span></span><span></span></button>
   </header>
   <main id="main">
+    <section class="anniversary anniversary-strip" id="anniversary-ticker" aria-labelledby="anniversary-title">
+      <h2 class="visually-hidden" id="anniversary-title">One year of lighting up Victoria.</h2>
+      <div class="anniversary-ticker" aria-hidden="true">
+        <div class="anniversary-track">
+          <span class="anniversary-repeat">ONE YEAR OF LIGHTING UP VICTORIA <span class="anniversary-star">✳</span> STILL GLOWING. <span class="anniversary-star">✳</span></span>
+          <span class="anniversary-repeat">ONE YEAR OF LIGHTING UP VICTORIA <span class="anniversary-star">✳</span> STILL GLOWING. <span class="anniversary-star">✳</span></span>
+        </div>
+      </div>
+      <button class="anniversary-toggle" type="button" aria-label="Pause anniversary ticker" aria-pressed="false" hidden>Pause ticker <span aria-hidden="true">Ⅱ</span></button>
+    </section>
     <section class="hero" aria-labelledby="hero-title">
       <img class="hero-photo" src="assets/led-cruiser.jpg" alt="Custom cruiser with bright cyan LED wheel rings in a truck bed at night" width="1200" height="1600" fetchpriority="high">
       <div class="hero-shade" aria-hidden="true"></div>
@@ -41,9 +51,15 @@
       <a class="hero-scroll" href="#our-story"><span aria-hidden="true">↓</span> There’s more after dark</a>
     </section>
     <div class="ride-types" aria-label="We install LEDs on these vehicles"><span>BMX</span><i aria-hidden="true">/</i><span>Cruisers</span><i aria-hidden="true">/</i><span>E-bikes</span><i aria-hidden="true">/</i><span>Harleys</span><i aria-hidden="true">/</i><span>Golf carts</span></div>
+    <section class="anniversary-note" id="anniversary" aria-label="Our first anniversary">
+      <div class="anniversary-details">
+        <span class="anniversary-badge">Our first anniversary</span>
+        <p>We celebrated one year in August. Thanks for lighting up Victoria with us.</p>
+      </div>
+    </section>
     <section class="story" id="our-story" aria-labelledby="story-title">
       <div class="story-photo-wrap"><img src="assets/night-ride-crew.jpg" alt="Two Victoria riders with purple plasma LED wheel rings lighting up the pavement" width="1400" height="1050" loading="lazy"><span class="photo-label"><span aria-hidden="true">●</span> Real rides. Our people. Victoria, TX.</span></div>
-      <div class="story-copy"><p class="eyebrow">A little light. A lot of connection.</p><h2 id="story-title">Come for<br class="story-break"> the glow.<br><span class="pink">Stay for<br class="story-break"> the people.</span></h2><p>We light up rides and bring Victoria together after dark. From a custom set of LEDs to a night out with the crew, it’s about making your ride—and your town—feel a little more like you.</p><a class="text-link" href="#night-rides">Ride with us <span aria-hidden="true">↗</span></a></div>
+      <div class="story-copy"><p class="eyebrow">A little light. A lot of connection.</p><h2 id="story-title">Come for<br class="story-break"> the glow.<br><span class="pink">Stay for<br class="story-break"> the people.</span></h2><p>Victoria Bikes brings together custom plasma LED installs and a local riding community in Victoria, Texas. We help you make your ride your own, then bring people together for family-friendly nights out on two wheels.</p><p>We celebrated our first anniversary in August. The lights get noticed. The people make it worth coming back.</p><a class="text-link" href="#night-rides">Ride with us <span aria-hidden="true">↗</span></a></div>
     </section>
     <section class="installs section-pad" id="custom-leds" aria-labelledby="installs-title">
       <div class="section-heading"><div><p class="eyebrow"><span class="pink-dash" aria-hidden="true"></span>Custom plasma LEDs</p><h2 class="display-title" id="installs-title">YOUR RIDE.<br><span class="pink">TURNED UP.</span></h2></div><p class="section-intro">The bike you love. The glow that makes it yours. We install custom plasma LEDs on BMX bikes, cruisers, e-bikes, Harleys, and golf carts.</p></div>
@@ -57,6 +73,27 @@
     <section class="night-rides" id="night-rides" aria-labelledby="rides-title">
       <div class="rides-copy"><p class="eyebrow"><span class="pink-dash" aria-hidden="true"></span>Good nights start here</p><h2 class="display-title" id="rides-title">BRING YOUR BIKE.<br><span class="teal">FIND YOUR<br>PEOPLE.</span></h2><p>Fresh air. Glowing wheels. Good company. Our family-friendly rides are a chance to get outside and see Victoria in a different light.</p><p>We ride near-nightly. Check our Facebook page for the latest ride updates, or call us to ask about joining.</p><a class="button button-teal" href="https://www.facebook.com/victoriatxbikes" target="_blank" rel="noopener noreferrer">Find the Next Ride <span aria-hidden="true">↗</span></a><p class="ride-note">Ride details and meetups are shared on Facebook.</p></div>
       <figure class="rides-photo"><img src="assets/community-ride.jpg" alt="Three riders cruising through Victoria at night on bikes with pink and purple LED lights" width="900" height="1200" loading="lazy"><figcaption>Victoria looks better together.</figcaption></figure>
+    </section>
+    <section class="ride-guide section-pad" aria-labelledby="ride-guide-title">
+      <div class="ride-guide-heading"><p class="eyebrow"><span class="pink-dash" aria-hidden="true"></span>Your first ride with us</p><h2 id="ride-guide-title">Let’s get you rolling.</h2></div>
+      <div class="ride-guide-grid">
+        <article><span class="guide-label">01 / When we ride</span><h3>Near-nightly.</h3><p>We get together for family-friendly night rides in Victoria. Check the latest ride update before heading out.</p></article>
+        <article><span class="guide-label">02 / Where to meet</span><h3>Find the next meetup.</h3><p>Visit our Facebook page for current ride details and meeting information. You can also call or text us to ask about joining.</p></article>
+        <article><span class="guide-label">03 / Who we are</span><h3>Your local riding crew.</h3><p>Custom LEDs, bike advice, and a community that brings people together after dark. Come get to know Victoria Bikes.</p></article>
+      </div>
+      <div class="ride-guide-actions"><a class="text-link" href="https://www.facebook.com/victoriatxbikes" target="_blank" rel="noopener noreferrer">See current ride updates <span aria-hidden="true">↗</span></a><a href="sms:+13612121219">Ask us about a ride: (361) 212-1219 <span aria-hidden="true">↗</span></a></div>
+    </section>
+    <section class="gallery section-pad" id="gallery" aria-labelledby="gallery-title">
+      <div class="section-heading"><div><p class="eyebrow"><span class="pink-dash" aria-hidden="true"></span>The Victoria Bikes photo album</p><h2 class="display-title" id="gallery-title">REAL RIDES.<br><span class="pink">REAL GLOW.</span></h2></div><div class="gallery-intro"><p>Custom lights. Familiar faces. Victoria after dark. Take a closer look at the rides and the people behind the glow.</p><span>Choose a photo to open the gallery <span aria-hidden="true">↗</span></span></div></div>
+      <div class="gallery-grid">
+        <a class="gallery-photo" href="assets/night-ride-crew.jpg" data-caption="Good company, brighter nights." aria-label="View photo: two riders with purple LED bikes"><img src="assets/night-ride-crew.jpg" alt="Two riders with purple LED wheel rings on their bikes" width="1400" height="1050" loading="lazy"><span class="gallery-photo-caption">Good company, brighter nights. <span aria-hidden="true">↗</span></span></a>
+        <a class="gallery-photo" href="assets/led-cruiser.jpg" data-caption="A whole new kind of blue." aria-label="View photo: cyan LED cruiser"><img src="assets/led-cruiser.jpg" alt="Cyan LED wheel rings on a custom cruiser in a truck bed" width="1200" height="1600" loading="lazy"><span class="gallery-photo-caption">A whole new kind of blue. <span aria-hidden="true">↗</span></span></a>
+        <a class="gallery-photo" href="assets/community-ride.jpg" data-caption="Victoria after dark." aria-label="View photo: three riders on a night ride"><img src="assets/community-ride.jpg" alt="Three people riding bikes with pink and purple LEDs at night" width="900" height="1200" loading="lazy"><span class="gallery-photo-caption">Victoria after dark. <span aria-hidden="true">↗</span></span></a>
+        <a class="gallery-photo" href="assets/gallery/plaza-glow.jpg" data-caption="A little color around town." aria-label="View photo: glowing bikes at the plaza"><img src="assets/gallery/plaza-glow.jpg" alt="Pink-lit bikes and a tricycle parked in front of bronze statues at the plaza" width="1600" height="1200" loading="lazy"><span class="gallery-photo-caption">A little color around town. <span aria-hidden="true">↗</span></span></a>
+        <a class="gallery-photo" href="assets/gallery/two-tones.jpg" data-caption="Different rides. Your own glow." aria-label="View photo: red and purple LED bikes"><img src="assets/gallery/two-tones.jpg" alt="Two bikes with red and purple wheel lights parked beside a tree" width="1200" height="1600" loading="lazy"><span class="gallery-photo-caption">Different rides. Your own glow. <span aria-hidden="true">↗</span></span></a>
+        <a class="gallery-photo" href="assets/gallery/ready-to-roll.jpg" data-caption="Loaded up. Ready to roll." aria-label="View photo: two illuminated bikes ready for a ride"><img src="assets/gallery/ready-to-roll.jpg" alt="Two cruisers with purple and cyan LED lights secured in a truck bed" width="602" height="960" loading="lazy"><span class="gallery-photo-caption">Loaded up. Ready to roll. <span aria-hidden="true">↗</span></span></a>
+      </div>
+      <div class="gallery-bottom"><p>A few nights from our camera roll.</p><a class="text-link" href="https://www.facebook.com/victoriatxbikes/photos" target="_blank" rel="noopener noreferrer">More photos on Facebook <span aria-hidden="true">↗</span></a></div>
     </section>
     <section class="faq section-pad" aria-labelledby="faq-title">
       <div><p class="eyebrow">Before you roll</p><h2 id="faq-title">A few bright<br> answers.</h2></div>
@@ -81,6 +118,11 @@
       </form>
     </section>
   </main>
+  <dialog class="gallery-dialog" id="gallery-dialog" aria-label="Victoria Bikes photo viewer" aria-describedby="gallery-caption">
+    <div class="gallery-dialog-top"><span class="eyebrow">Victoria Bikes / After dark</span><button type="button" class="gallery-close" aria-label="Close photo viewer" autofocus>Close <span aria-hidden="true">×</span></button></div>
+    <div class="gallery-stage"><button type="button" class="gallery-previous" aria-label="Previous photo">←</button><img id="gallery-full-photo" alt=""><button type="button" class="gallery-next" aria-label="Next photo">→</button></div>
+    <div class="gallery-dialog-bottom"><div aria-live="polite" aria-atomic="true"><p id="gallery-caption"></p><span id="gallery-count"></span></div><a id="gallery-original" href="assets/night-ride-crew.jpg" target="_blank" rel="noopener noreferrer">Open photo <span aria-hidden="true">↗</span></a></div>
+  </dialog>
   <footer class="site-footer"><div class="footer-top"><a class="wordmark" href="#">VICTORIA BIKES<span class="brand-dot" aria-hidden="true">.</span></a><p class="handwritten">See you after dark.</p><a href="https://www.facebook.com/victoriatxbikes" target="_blank" rel="noopener noreferrer">Follow the glow <span aria-hidden="true">↗</span></a></div><div class="footer-bottom"><span>© <span id="year">2026</span> Victoria Bikes</span><span>Custom LEDs. Good people. Victoria, Texas.</span><a href="mailto:hello@victoriabikes.com">hello@victoriabikes.com</a></div></footer>
 </body>
 </html>

@@ -67,3 +67,67 @@ document.querySelector('#copy-request').addEventListener('click', async () => {
 });
 
 document.querySelector('#year').textContent = new Date().getFullYear();
+
+const anniversary = document.querySelector('.anniversary');
+const anniversaryToggle = document.querySelector('.anniversary-toggle');
+const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+
+function updateTickerMotion() {
+  anniversary.classList.toggle('is-animated', !reducedMotion.matches);
+  anniversaryToggle.hidden = reducedMotion.matches;
+}
+updateTickerMotion();
+reducedMotion.addEventListener('change', updateTickerMotion);
+anniversaryToggle.addEventListener('click', () => {
+  const paused = anniversary.classList.toggle('is-paused');
+  anniversaryToggle.setAttribute('aria-pressed', String(paused));
+  anniversaryToggle.setAttribute('aria-label', paused ? 'Resume anniversary ticker' : 'Pause anniversary ticker');
+  anniversaryToggle.innerHTML = paused ? 'Resume ticker <span aria-hidden="true">▷</span>' : 'Pause ticker <span aria-hidden="true">Ⅱ</span>';
+});
+
+// Photo links remain usable when JavaScript or the dialog API is unavailable.
+const galleryPhotos = [...document.querySelectorAll('.gallery-photo')];
+const galleryDialog = document.querySelector('#gallery-dialog');
+const fullPhoto = document.querySelector('#gallery-full-photo');
+let galleryIndex = 0;
+let galleryTrigger = null;
+
+function showGalleryPhoto(index) {
+  galleryIndex = (index + galleryPhotos.length) % galleryPhotos.length;
+  const photo = galleryPhotos[galleryIndex];
+  fullPhoto.src = photo.href;
+  fullPhoto.alt = photo.querySelector('img').alt;
+  document.querySelector('#gallery-caption').textContent = photo.dataset.caption;
+  document.querySelector('#gallery-count').textContent = `${galleryIndex + 1} / ${galleryPhotos.length}`;
+  document.querySelector('#gallery-original').href = photo.href;
+}
+
+if (galleryDialog && typeof galleryDialog.showModal === 'function') {
+  galleryPhotos.forEach((photo, index) => {
+    photo.addEventListener('click', event => {
+      if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+      event.preventDefault();
+      galleryTrigger = photo;
+      showGalleryPhoto(index);
+      galleryDialog.showModal();
+      document.body.classList.add('gallery-open');
+    });
+  });
+  document.querySelector('.gallery-close').addEventListener('click', () => galleryDialog.close());
+  document.querySelector('.gallery-previous').addEventListener('click', () => showGalleryPhoto(galleryIndex - 1));
+  document.querySelector('.gallery-next').addEventListener('click', () => showGalleryPhoto(galleryIndex + 1));
+  galleryDialog.addEventListener('keydown', event => {
+    if (event.key === 'ArrowLeft' || event.key === 'ArrowRight') {
+      event.preventDefault();
+      showGalleryPhoto(galleryIndex + (event.key === 'ArrowRight' ? 1 : -1));
+    }
+  });
+  galleryDialog.addEventListener('click', event => {
+    const bounds = galleryDialog.getBoundingClientRect();
+    if (event.target === galleryDialog && (event.clientX < bounds.left || event.clientX > bounds.right || event.clientY < bounds.top || event.clientY > bounds.bottom)) galleryDialog.close();
+  });
+  galleryDialog.addEventListener('close', () => {
+    document.body.classList.remove('gallery-open');
+    galleryTrigger?.focus({preventScroll: true});
+  });
+}
