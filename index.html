@@ -1,177 +1,86 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Victoria Bikes — Coming Soon</title>
-  <meta name="description" content="Custom plasma LED installs and family-friendly night rides in Victoria, Texas. Coming soon.">
+  <meta name="theme-color" content="#07090d">
+  <title>Victoria Bikes — Light Up the Night</title>
+  <meta name="description" content="Custom plasma LED installs for bikes, Harleys, and golf carts. Join Victoria Bikes for family-friendly night rides in Victoria, Texas.">
+  <meta property="og:title" content="Victoria Bikes — Light Up the Night">
+  <meta property="og:description" content="Custom LED installs. Family-friendly night rides. A brighter way to roll in Victoria, Texas.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://victoriabikes.com/assets/night-ride-crew.jpg">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;600;700&family=Rock+Salt&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --pink: #E85C93;
-      --pink-strong: #E02B74;
-      --teal: #40BFCF;
-      --purple: #7A6CFF;
-      --text: #F4F6FB;
-      --muted: #C9D0DC;
-      --grad: linear-gradient(90deg, var(--pink), var(--teal), var(--purple));
-    }
-
-    * { box-sizing: border-box; }
-
-    html, body {
-      margin: 0;
-      min-height: 100%;
-    }
-
-    body {
-      font-family: "Epilogue", sans-serif;
-      color: var(--text);
-      background: #05060a;
-    }
-
-    .page {
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 32px 20px;
-      background:
-        linear-gradient(180deg, rgba(5, 6, 10, 0.42) 0%, rgba(5, 6, 10, 0.78) 100%),
-        url("hero.jpg") center / cover no-repeat;
-    }
-
-    .card {
-      width: min(760px, 100%);
-      text-align: center;
-      padding: 36px 28px 28px;
-      border-radius: 18px;
-      background: rgba(10, 12, 18, 0.72);
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      box-shadow: 0 18px 48px rgba(0, 0, 0, 0.35);
-      backdrop-filter: blur(10px);
-    }
-
-    .kicker {
-      display: inline-block;
-      font-size: 13px;
-      font-weight: 700;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      background-image: linear-gradient(90deg, var(--pink), var(--teal));
-      -webkit-background-clip: text;
-      background-clip: text;
-      color: transparent;
-    }
-
-    h1 {
-      font-family: "Rock Salt", cursive;
-      font-size: clamp(36px, 7vw, 68px);
-      font-weight: 400;
-      line-height: 1.2;
-      margin: 16px 0 10px;
-      color: var(--pink-strong);
-    }
-
-    .soon {
-      margin: 0 0 18px;
-      font-size: 15px;
-      font-weight: 700;
-      letter-spacing: 0.16em;
-      text-transform: uppercase;
-      background-image: var(--grad);
-      -webkit-background-clip: text;
-      background-clip: text;
-      color: transparent;
-    }
-
-    .sub {
-      margin: 0 auto 26px;
-      max-width: 620px;
-      font-size: clamp(16px, 2vw, 19px);
-      line-height: 1.55;
-      color: var(--muted);
-    }
-
-    .ctas {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 14px;
-      margin-bottom: 18px;
-    }
-
-    .btn {
-      display: inline-block;
-      padding: 12px 26px;
-      border-radius: 8px;
-      font-size: 16px;
-      font-weight: 700;
-      text-decoration: none;
-      transition: all 0.25s ease;
-    }
-
-    .btn-primary {
-      color: #fff;
-      background: var(--grad);
-    }
-
-    .btn-primary:hover {
-      color: #111;
-      background: #fff;
-    }
-
-    .btn-outline {
-      color: #fff;
-      border: 1px solid transparent;
-      background:
-        linear-gradient(rgba(10, 12, 18, 0.85), rgba(10, 12, 18, 0.85)) padding-box,
-        var(--grad) border-box;
-    }
-
-    .btn-outline:hover {
-      color: #fff;
-      background: var(--grad);
-    }
-
-    .meta {
-      font-size: 15px;
-      color: var(--muted);
-    }
-
-    .meta a {
-      color: var(--pink);
-      font-weight: 700;
-      text-decoration: none;
-    }
-
-    .meta a:hover {
-      color: var(--teal);
-    }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@800;900&family=Epilogue:wght@400;500;600;700;800&family=Rock+Salt&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="assets/led-cruiser.jpg" fetchpriority="high">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-  <main class="page">
-    <section class="card">
-      <span class="kicker">Plasma LEDs • Family-Friendly Rides</span>
-      <h1>Light Up the Night</h1>
-      <p class="soon">Coming soon</p>
-      <p class="sub">
-        Custom plasma LED installs with CCLED gear from Corpus Christi. From BMX and cruisers to e-bikes, Harleys, and golf carts—we make every ride glow.
-        Join our near-nightly, family-friendly rides and roll with the brightest crew in Victoria.
-      </p>
-      <div class="ctas">
-        <a class="btn btn-primary" href="mailto:hello@victoriabikes.com?subject=Custom%20Quote%20Request&amp;body=Hi%20Victoria%20Bikes%2C%0D%0A%0D%0AI%27d%20like%20a%20custom%20quote.%20Here%20are%20my%20details%3A%0D%0A%0D%0AVehicle%20Type%3A%20Bike%20%2F%20Motorcycle%20%2F%20Golf%20Cart%20(other%3F)%0D%0ALighting%20Wanted%3A%20Frame%20Lights%20%2F%20Wheel%20Lights%20%2F%20Both%0D%0AOther%20Preferences%3A%20Color%20choice%2C%20single%20or%20dual%20strips%2C%20etc.%0D%0A%0D%0AThanks!">Get a Custom Quote</a>
-        <a class="btn btn-outline" href="https://www.facebook.com/victoriatxbikes" target="_blank" rel="noopener">Join Tonight’s Ride</a>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="wordmark" href="#" aria-label="Victoria Bikes home">VICTORIA BIKES<span class="brand-dot" aria-hidden="true">.</span></a>
+    <nav aria-label="Main navigation" id="main-nav"><a href="#custom-leds">Custom LEDs</a><a href="#night-rides">Night Rides</a><a href="#our-story">Our Story</a></nav>
+    <a class="button button-pink header-cta" href="#quote">Get a Custom Quote <span aria-hidden="true">↗</span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Open navigation"><span></span><span></span></button>
+  </header>
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <img class="hero-photo" src="assets/led-cruiser.jpg" alt="Custom cruiser with bright cyan LED wheel rings in a truck bed at night" width="1200" height="1600" fetchpriority="high">
+      <div class="hero-shade" aria-hidden="true"></div>
+      <div class="hero-content">
+        <p class="eyebrow"><span class="pink-dash" aria-hidden="true"></span>Plasma LEDs <span aria-hidden="true">•</span> Family-friendly rides</p>
+        <h1 id="hero-title">LIGHT UP<br>THE<br><span>NIGHT.</span></h1>
+        <p class="handwritten hero-location">Victoria, Texas</p>
+        <p class="hero-description">Custom LED installs. Family-friendly night rides.<br class="desktop-break"> A brighter way to roll in Victoria.</p>
+        <div class="button-row"><a class="button button-pink" href="#quote">Get a Custom Quote <span aria-hidden="true">↗</span></a><a class="button button-outline" href="#night-rides">Find a Ride <span aria-hidden="true">↗</span></a></div>
       </div>
-      <p class="meta">
-        Text/Call <a href="tel:3612121219">(361) 212-1219</a>
-        •
-        <a href="mailto:hello@victoriabikes.com">hello@victoriabikes.com</a>
-      </p>
+      <p class="hero-note handwritten">Your ride.<br>A whole new glow.</p>
+      <a class="hero-scroll" href="#our-story"><span aria-hidden="true">↓</span> There’s more after dark</a>
+    </section>
+    <div class="ride-types" aria-label="We install LEDs on these vehicles"><span>BMX</span><i aria-hidden="true">/</i><span>Cruisers</span><i aria-hidden="true">/</i><span>E-bikes</span><i aria-hidden="true">/</i><span>Harleys</span><i aria-hidden="true">/</i><span>Golf carts</span></div>
+    <section class="story" id="our-story" aria-labelledby="story-title">
+      <div class="story-photo-wrap"><img src="assets/night-ride-crew.jpg" alt="Two Victoria riders with purple plasma LED wheel rings lighting up the pavement" width="1400" height="1050" loading="lazy"><span class="photo-label"><span aria-hidden="true">●</span> Real rides. Our people. Victoria, TX.</span></div>
+      <div class="story-copy"><p class="eyebrow">A little light. A lot of connection.</p><h2 id="story-title">Come for<br class="story-break"> the glow.<br><span class="pink">Stay for<br class="story-break"> the people.</span></h2><p>We light up rides and bring Victoria together after dark. From a custom set of LEDs to a night out with the crew, it’s about making your ride—and your town—feel a little more like you.</p><a class="text-link" href="#night-rides">Ride with us <span aria-hidden="true">↗</span></a></div>
+    </section>
+    <section class="installs section-pad" id="custom-leds" aria-labelledby="installs-title">
+      <div class="section-heading"><div><p class="eyebrow"><span class="pink-dash" aria-hidden="true"></span>Custom plasma LEDs</p><h2 class="display-title" id="installs-title">YOUR RIDE.<br><span class="pink">TURNED UP.</span></h2></div><p class="section-intro">The bike you love. The glow that makes it yours. We install custom plasma LEDs on BMX bikes, cruisers, e-bikes, Harleys, and golf carts.</p></div>
+      <div class="install-options">
+        <article class="install-option"><span class="option-number">01 /</span><div><h3>Light up the wheels.</h3><p>That unmistakable ring of light. Make your wheels the center of attention.</p></div><span class="wheel-icon" aria-hidden="true"></span></article>
+        <article class="install-option"><span class="option-number">02 /</span><div><h3>Show off the frame.</h3><p>Follow the lines of your ride with lighting that brings its character to life.</p></div><svg class="frame-icon" viewBox="0 0 90 70" fill="none" aria-hidden="true"><path d="M8 54 31 14 53 54H8Zm23-40h40L53 54m18-40 13 40" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/></svg></article>
+        <article class="install-option"><span class="option-number">03 /</span><div><h3>Go for the full glow.</h3><p>Wheels and frame, together. Tell us what you have in mind and we’ll talk through the setup.</p></div><span class="spark-icon" aria-hidden="true">✳</span></article>
+      </div>
+      <div class="install-bottom"><p>Got a different kind of ride? Let’s talk about it.</p><a class="text-link" href="#quote">Start your custom install <span aria-hidden="true">↗</span></a></div>
+    </section>
+    <section class="night-rides" id="night-rides" aria-labelledby="rides-title">
+      <div class="rides-copy"><p class="eyebrow"><span class="pink-dash" aria-hidden="true"></span>Good nights start here</p><h2 class="display-title" id="rides-title">BRING YOUR BIKE.<br><span class="teal">FIND YOUR<br>PEOPLE.</span></h2><p>Fresh air. Glowing wheels. Good company. Our family-friendly rides are a chance to get outside and see Victoria in a different light.</p><p>We ride near-nightly. Check our Facebook page for the latest ride updates, or call us to ask about joining.</p><a class="button button-teal" href="https://www.facebook.com/victoriatxbikes" target="_blank" rel="noopener noreferrer">Find the Next Ride <span aria-hidden="true">↗</span></a><p class="ride-note">Ride details and meetups are shared on Facebook.</p></div>
+      <figure class="rides-photo"><img src="assets/community-ride.jpg" alt="Three riders cruising through Victoria at night on bikes with pink and purple LED lights" width="900" height="1200" loading="lazy"><figcaption>Victoria looks better together.</figcaption></figure>
+    </section>
+    <section class="faq section-pad" aria-labelledby="faq-title">
+      <div><p class="eyebrow">Before you roll</p><h2 id="faq-title">A few bright<br> answers.</h2></div>
+      <div class="faq-list">
+        <details><summary>What can you put lights on?<span aria-hidden="true">+</span></summary><p>We do custom plasma LED installs on BMX bikes, cruisers, e-bikes, Harleys, and golf carts. Tell us about your ride and the look you want so we can talk through the options.</p></details>
+        <details><summary>How much does a custom install cost?<span aria-hidden="true">+</span></summary><p>Each setup is different. Send us your vehicle type and whether you’re thinking wheel lights, frame lights, or both. We’ll discuss the details and provide a custom quote.</p></details>
+        <details><summary>How do I find the next ride?<span aria-hidden="true">+</span></summary><p>Check <a href="https://www.facebook.com/victoriatxbikes" target="_blank" rel="noopener noreferrer">Victoria Bikes on Facebook</a> for current ride updates and meetup details, or call <a href="tel:+13612121219">(361) 212-1219</a>. Check the latest details before heading out.</p></details>
+        <details><summary>Are the rides family-friendly?<span aria-hidden="true">+</span></summary><p>Yes—family-friendly night rides are part of what we do. Contact us about the next outing so you can find out what to expect before bringing the family.</p></details>
+      </div>
+    </section>
+    <section class="quote section-pad" id="quote" aria-labelledby="quote-title">
+      <div class="quote-copy"><p class="eyebrow"><span class="pink-dash" aria-hidden="true"></span>Let’s make it yours</p><h2 class="display-title" id="quote-title">READY TO<br><span class="pink">LIGHT IT UP?</span></h2><p>Tell us what you ride and what you’re imagining. We’ll help you take it from there.</p><a class="contact-phone" href="tel:+13612121219">(361) 212-1219 <span aria-hidden="true">↗</span></a><p class="contact-caption">Call us, or <a href="sms:+13612121219">send a text</a>.</p><a class="contact-email" href="mailto:hello@victoriabikes.com">hello@victoriabikes.com</a></div>
+      <form class="quote-form" id="quote-form">
+        <div class="form-top"><span>Your next glow starts here.</span><span class="form-star" aria-hidden="true">✳</span></div>
+        <label for="customer-name">Your name <span>(required)</span></label><input id="customer-name" name="name" autocomplete="name" maxlength="100" placeholder="First and last name" required>
+        <div class="form-grid"><div><label for="vehicle">What do you ride? <span>(required)</span></label><select id="vehicle" name="vehicle" required><option value="">Choose your ride</option><option>BMX</option><option>Cruiser</option><option>E-bike</option><option>Harley / motorcycle</option><option>Golf cart</option><option>Something else</option></select></div><div><label for="lighting">What’s the vision?</label><select id="lighting" name="lighting"><option>Wheels and frame</option><option>Wheel lights</option><option>Frame lights</option><option>Help me choose</option></select></div></div>
+        <label for="details">Tell us a little more <span>(optional)</span></label><textarea id="details" name="details" rows="3" maxlength="2000" placeholder="Colors, bike model, or an idea you can’t stop thinking about…"></textarea>
+        <button class="button button-pink" type="submit">Prepare My Quote Request <span aria-hidden="true">↗</span></button>
+        <p class="form-note">We’ll prepare an email for you to review and send. Nothing is submitted through this website.</p>
+        <noscript><p>To request a quote, email <a href="mailto:hello@victoriabikes.com?subject=Custom%20LED%20quote">hello@victoriabikes.com</a> with your ride and lighting ideas, or call us.</p></noscript>
+        <div class="quote-result" id="quote-result" hidden tabindex="-1" aria-labelledby="result-title"><h3 id="result-title">Your request is ready.</h3><p>Open the draft in your email app, then send it to us. Prefer webmail? Copy the request and send it to hello@victoriabikes.com.</p><div class="result-actions"><a class="button button-teal" id="email-draft" href="mailto:hello@victoriabikes.com">Open Email Draft <span aria-hidden="true">↗</span></a><button class="copy-button" id="copy-request" type="button">Copy request</button></div><p id="copy-status" role="status"></p></div>
+      </form>
     </section>
   </main>
+  <footer class="site-footer"><div class="footer-top"><a class="wordmark" href="#">VICTORIA BIKES<span class="brand-dot" aria-hidden="true">.</span></a><p class="handwritten">See you after dark.</p><a href="https://www.facebook.com/victoriatxbikes" target="_blank" rel="noopener noreferrer">Follow the glow <span aria-hidden="true">↗</span></a></div><div class="footer-bottom"><span>© <span id="year">2026</span> Victoria Bikes</span><span>Custom LEDs. Good people. Victoria, Texas.</span><a href="mailto:hello@victoriabikes.com">hello@victoriabikes.com</a></div></footer>
 </body>
 </html>
