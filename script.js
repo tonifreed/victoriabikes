@@ -27,45 +27,6 @@ document.addEventListener('click', event => {
 });
 window.matchMedia('(min-width: 761px)').addEventListener('change', closeMenu);
 
-const form = document.querySelector('#quote-form');
-const result = document.querySelector('#quote-result');
-const status = document.querySelector('#copy-status');
-let requestText = '';
-
-form.addEventListener('submit', event => {
-  event.preventDefault();
-  if (!form.reportValidity()) return;
-  const data = new FormData(form);
-  requestText = [
-    'Hi Victoria Bikes,', '',
-    'I’d like a custom plasma LED quote.', '',
-    `Name: ${data.get('name').trim()}`,
-    `Ride: ${data.get('vehicle')}`,
-    `Lighting: ${data.get('lighting')}`,
-    `Details: ${data.get('details').trim() || 'Let’s talk through the options.'}`,
-    '', 'Thanks!'
-  ].join('\n');
-  document.querySelector('#email-draft').href = `mailto:hello@victoriabikes.com?subject=${encodeURIComponent('Custom LED quote — ' + data.get('vehicle'))}&body=${encodeURIComponent(requestText)}`;
-  status.textContent = '';
-  result.hidden = false;
-  result.focus({ preventScroll: true });
-  result.scrollIntoView({ behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth', block: 'nearest' });
-});
-
-form.addEventListener('input', () => {
-  result.hidden = true;
-  status.textContent = '';
-});
-
-document.querySelector('#copy-request').addEventListener('click', async () => {
-  try {
-    await navigator.clipboard.writeText(`To: hello@victoriabikes.com\nSubject: Custom LED quote\n\n${requestText}`);
-    status.textContent = 'Copied. Paste into your email and send when you’re ready.';
-  } catch {
-    status.textContent = 'Copy isn’t available in this browser. Use Open Email Draft, or email us directly.';
-  }
-});
-
 document.querySelector('#year').textContent = new Date().getFullYear();
 
 const anniversary = document.querySelector('.anniversary');
@@ -96,7 +57,9 @@ const galleryForward = document.querySelector('#gallery-forward');
 const galleryDots = document.querySelector('#gallery-dots');
 const galleryStatus = document.querySelector('#gallery-status');
 const galleryPageSize = 6;
-let selectedPhotos = galleryPhotos;
+const includeSimilar = document.querySelector('#gallery-include-similar');
+let selectedFilter = 'all';
+let selectedPhotos = galleryPhotos.filter(photo => photo.dataset.similar !== 'true');
 let viewerPhotos = galleryPhotos;
 let galleryPageIndex = 0;
 let galleryIndex = 0;
@@ -108,7 +71,10 @@ function updateGalleryPosition() {
   galleryStatus.textContent = `Photos ${galleryPageIndex * galleryPageSize + 1}–${Math.min((galleryPageIndex + 1) * galleryPageSize, selectedPhotos.length)} of ${selectedPhotos.length}`;
   galleryBack.disabled = galleryPageIndex === 0;
   galleryForward.disabled = galleryPageIndex === pageCount - 1;
-  [...galleryDots.children].forEach((dot, index) => dot.setAttribute('aria-current', String(index === galleryPageIndex)));
+  [...galleryDots.children].forEach((dot, index) => {
+    dot.setAttribute('aria-current', String(index === galleryPageIndex));
+    dot.hidden = index !== 0 && index !== pageCount - 1 && Math.abs(index - galleryPageIndex) > 1;
+  });
 }
 
 function goToGalleryPage(index, behavior = reducedMotion.matches ? 'instant' : 'smooth') {
@@ -142,15 +108,24 @@ if (galleryFilters && galleryGrid && galleryDots) {
   galleryFilters.hidden = false;
   document.querySelector('.gallery-slider-controls').hidden = false;
   galleryGrid.classList.add('is-slider');
+  document.querySelector('.gallery-options').hidden = false;
+  function applyGalleryFilters() {
+    selectedPhotos = galleryPhotos.filter(photo =>
+      (includeSimilar.checked || photo.dataset.similar !== 'true') &&
+      (selectedFilter === 'all' || photo.dataset.category === selectedFilter ||
+       (selectedFilter === 'groups' && photo.dataset.group === 'true')));
+    buildGalleryPages();
+  }
   galleryFilters.addEventListener('click', event => {
     const button = event.target.closest('button[data-filter]');
     if (!button) return;
+    selectedFilter = button.dataset.filter;
     galleryFilters.querySelectorAll('button').forEach(filter => {
       filter.setAttribute('aria-pressed', String(filter === button));
     });
-    selectedPhotos = galleryPhotos.filter(photo => button.dataset.filter === 'all' || photo.dataset.category === button.dataset.filter || (button.dataset.filter === 'groups' && photo.dataset.group === 'true'));
-    buildGalleryPages();
+    applyGalleryFilters();
   });
+  includeSimilar.addEventListener('change', applyGalleryFilters);
   galleryBack.addEventListener('click', () => goToGalleryPage(galleryPageIndex - 1));
   galleryForward.addEventListener('click', () => goToGalleryPage(galleryPageIndex + 1));
   galleryGrid.addEventListener('scroll', updateGalleryPosition, { passive: true });

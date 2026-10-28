@@ -8,9 +8,9 @@ Run `python3 -m http.server 4173 --bind 127.0.0.1` from this directory, then ope
 
 ## Files
 
-- `index.html`: content, navigation, FAQ, and quote form.
+- `index.html`: content, navigation, FAQ, and contact links.
 - `styles.css`: desktop and mobile layouts; reduced-motion support.
-- `script.js`: mobile navigation, email quote preparation, gallery filters, slider, footer photo strip, and photo viewer.
+- `script.js`: mobile navigation, gallery filters, slider, footer photo strip, and photo viewer.
 - `assets/`: optimized original photography and favicon.
 
 No build step or package installation is required. Vercel can serve the project root as a static site. The saved WordPress preview, its asset folder, original full-size photography, and generated design concepts are excluded from deployment.
@@ -31,20 +31,20 @@ All local image material is consolidated in `website-photos/`:
 - `originals/`: 42 unchanged source files, including duplicate source copies and the earlier hero derivative; excluded from git and deployment.
 - `index.html`: a visual index of every optimized image, with category filters and full-image links. Open `/website-photos/#groups` to inspect group photos.
 - `catalog.json` and `photo-index.csv`: descriptions, source mappings, category labels, similar-photo series, file sizes, and website selection status.
-- `gallery.json`: the 22 curated homepage photos, in display order.
+- `gallery.json`: the combined homepage album: 196 images, with 76 varied views shown by default and 120 similar shots available through a checkbox.
 - `pending-uploads.json`: 20 supplied Facebook JPEG attachments whose names are available but whose image bytes could not be downloaded. They have not been reviewed or included. Do not describe this as a complete import.
 
-The 39 reviewed images comprise 29 photographs and four crew posters from the original local folder, five original project photographs, and one previously retrieved public Facebook photo. Two visually identical local copies share their optimized counterpart. No alternate view has been removed from the complete collection: 13 similar photographs remain in the photo index but are omitted from the homepage selection.
+The 39 reviewed images comprise 29 photographs and four crew posters from the original local folder, five original project photographs, and one previously retrieved public Facebook photo. Two visually identical local copies share their optimized counterpart. Alternate views are available in the homepage gallery with “Include similar shots.”
 
 Five images are labelled group: four frames of the same large gathering (`IMG_1245`, `IMG_1247`, `IMG_1248`, `IMG_1253`) and one photograph of three riders (`victoria bikes media5`). Images of bikes alone are labelled bike, not group. Labels describe visible content, not identities inferred from faces.
 
-The homepage gallery supports Groups, Night rides, Custom LEDs, and Daylight filters; six-photo slides; arrows, page dots, native scrolling, and a modal viewer. The footer has a ten-photo strip with pause and reduced-motion support. Without JavaScript, gallery photo links remain available.
+The homepage gallery supports Groups, Night rides, Bikes, Daylight, and Posters filters; six-photo slides; arrows, page dots, native scrolling, and a modal viewer. The footer has a ten-photo strip with pause and reduced-motion support. Without JavaScript, gallery photo links remain available.
 
 ## Crew content sources
 
 Four posters supplied the initial crew information: Kenny (`IMG_1208`), Linda (`IMG_1209`), Toni (`IMG_1213`), and Adrianna (`IMG_1215`). The website uses its own branding rather than copying the posters' design.
 
-The owner added Nick as an original founder and supplied interests: Nick collects, trades, and sells Pokémon cards and loves Harry Potter, sport bikes, and MotoGP; Kenny loves the Broncos, sport bikes, and MotoGP; Toni loves Taylor Swift and MotoGP; Linda loves the Texans, Monster in the white can, and taking care of Adrianna; Adrianna loves Starbucks coffee, music, naps, and true crime.
+The owner identified Nick as part of the original founder group and supplied interests: Nick collects, trades, and sells Pokémon cards and loves Harry Potter, sport bikes, and MotoGP; Kenny loves the Broncos, sport bikes, and MotoGP; Toni loves Taylor Swift and MotoGP; Linda loves the Texans, Monster in the white can, and taking care of Adrianna; Adrianna loves Starbucks coffee, music, naps, and true crime.
 
 The four local posters contain biographies rather than a ride schedule. Keep the owner's near-nightly description and link to Facebook for current meetup details; do not invent fixed times or locations.
 
@@ -65,3 +65,9 @@ All 264 images from `more photos to sort/` were reviewed through contact sheets 
 The new batch contains 55 group-photo files, with similar poses numbered within their sets: a night gathering beneath a park lamp, a waterfront pavilion gathering, a plaza-statue gathering, and a three-rider night photograph. Labels describe what is visible rather than identifying people.
 
 The review page `/website-photos/more-photos.html` shows all 264 labelled entries and links from the main collection index. Its optimized display copies share matching-preview assets: 166 WebP files, capped at 1600 pixels, totaling 37.4 MB. The original folder and source archive are excluded from git and deployment. The homepage photo selection is unchanged by this labelling pass.
+
+The crew section has six cards in this order: Kenny, Toni, Meemaw & Finn, Nick, Adrianna, Linda. Desktop uses two rows of three; smaller screens use two columns or one. Kenny, Toni, Meemaw, and Nick are titled Co-founder. Adrianna and Linda are titled Core Crew. Their roles are: Kenny—Bike whisperer; Toni—Website & software wizard; Meemaw—Pace setter; Nick—Wizard on Wheels; Adrianna—Chief Hype Officer; Linda—Gears & Cheers. Finn is Meemaw’s basket co-pilot. The founder bios do not name each other. The owner supplied Meemaw’s love of her daughters, grandkids, bingo, and scratch-off lotto breaks; she rides a trike with blinkers, and her dog Finn rides in the back basket. Bios use a lighter tone while retaining those supplied details.
+
+The homepage leads with riding and community, with a group photo, Join a Ride actions, and clear messaging that custom lights are optional. The owner dates the first rides to late July 2025, when riding helped the founders through a hard season; the first anniversary celebration was in August. Optional custom lighting information sits in the last, collapsed FAQ item, with email and Facebook message links instead of a quote form.
+
+Run `python3 scripts/build-gallery.py` to regenerate the static homepage cards and `gallery.json` from both photo catalogs. This requires ffprobe to read dimensions for newer images. The generator skips matching optimized paths, exact source hashes, and source matches across collections. Series labels keep similar poses and angles out of the default view; visitors can include them. All cards remain accessible without JavaScript. Pagination shows a compact set of page buttons.
