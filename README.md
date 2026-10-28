@@ -10,7 +10,7 @@ Run `python3 -m http.server 4173 --bind 127.0.0.1` from this directory, then ope
 
 - `index.html`: content, navigation, FAQ, and quote form.
 - `styles.css`: desktop and mobile layouts; reduced-motion support.
-- `script.js`: mobile navigation and email quote preparation.
+- `script.js`: mobile navigation, email quote preparation, gallery filters, slider, footer photo strip, and photo viewer.
 - `assets/`: optimized original photography and favicon.
 
 No build step or package installation is required. Vercel can serve the project root as a static site. The saved WordPress preview, its asset folder, original full-size photography, and generated design concepts are excluded from deployment.
@@ -25,8 +25,16 @@ Fonts load from Google Fonts, with system fallbacks when unavailable. All displa
 
 ## Photo gallery and source status
 
-The gallery currently contains six photos: the five original project photos plus the lead photo publicly exposed by `https://www.facebook.com/victoriatxbikes/photos`, retrieved October 27, 2026 (America/Chicago). That Facebook photo is saved as `assets/gallery/ready-to-roll.jpg`. The full Facebook album and poster text were not available through the retrieval tools; this is not a complete album import.
+The gallery contains 35 photos: 29 from the owner's local `photos/` folder, the five original project photos, and the lead photo publicly exposed by `https://www.facebook.com/victoriatxbikes/photos`, retrieved October 27, 2026 (America/Chicago). That lead photo is saved as `assets/gallery/ready-to-roll.jpg`. The separate Facebook uploads could not be downloaded during this update; this is not a complete Facebook album import.
 
-The gallery supports a native modal photo viewer, previous/next controls, left/right arrow keys, Escape to close, and links to each image without JavaScript. Image captions describe visible content; they do not claim dates or specific event names.
+The local folder contains 35 JPEGs: 29 distinct photographs, two duplicate copies (`IMG_1054 2.jpeg` and `IMG_4578 2.jpeg`), and four crew introduction posters. The duplicate pairs produce identical review thumbnails. Original files and videos remain untouched in `photos/`, which is excluded from git and deployment. Display copies are capped at 1600 pixels and thumbnails at 640 pixels. `assets/gallery/catalog.json` records the source, caption, category, and dimensions of each displayed photograph; the HTML contains the rendered photo links, with no build step required.
 
-Ride information uses the details supplied for this project. Exact ride times and meetup locations still need the poster source files or owner confirmation. Do not infer a current recurring schedule from undated or one-off event posters. Apply the existing website styling to the verified poster information rather than copying poster artwork into the page layout.
+The gallery supports filters (all, night rides, custom LEDs, daylight), slides of six photos with arrows, page dots, native swipe scrolling, and a native modal viewer with previous/next controls, arrow keys, Escape, and focus return. The viewer navigates the active category, including photos beyond the currently visible slide. Without JavaScript, all 35 photo links are visible and open directly. Captions describe visible content; they do not claim dates or event names.
+
+The crew section paraphrases four owner-provided VTX Ryders posters: `IMG_1208.jpeg` (Kenny, co-founder), `IMG_1209.jpeg` (Linda, Ryder crew), `IMG_1213.jpeg` (Toni, co-founder), and `IMG_1215.jpeg` (Adrianna, social media manager). Names and roles come from the poster text, not face identification. The section uses the website's existing branding, not the poster artwork.
+
+Ride information uses the owner's supplied near-nightly description. These four posters contain biographies, not a recurring schedule. Exact ride times and meetup locations still need a source or owner confirmation; Facebook remains the destination for current details. Do not infer a current recurring schedule from undated or one-off event posters.
+
+The footer includes a continuous ten-photo strip using existing thumbnails. It pauses on hover, keyboard focus, or its pause button. Reduced-motion users get a manually scrollable strip without animation or repeated images. Footer photo links open the full album in the viewer, independently of the main gallery filter.
+
+Owner updates: Nick is an original founder. His interests include collecting, trading, and selling Pokémon cards, Harry Potter, sport bikes, and MotoGP. Kenny is a Broncos fan, sport bike rider, and MotoGP fan; Toni is a Taylor Swift and MotoGP fan. These details were supplied directly by the owner. Group photos from `IMG_1253.jpeg`, `IMG_1247.jpeg`, and `IMG_1248.jpeg` lead the gallery and appear together above the five crew bios.

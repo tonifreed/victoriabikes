@@ -89,25 +89,105 @@ anniversaryToggle.addEventListener('click', () => {
 const galleryPhotos = [...document.querySelectorAll('.gallery-photo')];
 const galleryDialog = document.querySelector('#gallery-dialog');
 const fullPhoto = document.querySelector('#gallery-full-photo');
+const galleryFilters = document.querySelector('.gallery-filters');
+const galleryGrid = document.querySelector('#gallery-grid');
+const galleryBack = document.querySelector('#gallery-back');
+const galleryForward = document.querySelector('#gallery-forward');
+const galleryDots = document.querySelector('#gallery-dots');
+const galleryStatus = document.querySelector('#gallery-status');
+const galleryPageSize = 6;
+let selectedPhotos = galleryPhotos;
+let viewerPhotos = galleryPhotos;
+let galleryPageIndex = 0;
 let galleryIndex = 0;
 let galleryTrigger = null;
 
+function updateGalleryPosition() {
+  const pageCount = Math.ceil(selectedPhotos.length / galleryPageSize);
+  galleryPageIndex = Math.max(0, Math.min(pageCount - 1, Math.round(galleryGrid.scrollLeft / (galleryGrid.clientWidth || 1))));
+  galleryStatus.textContent = `Photos ${galleryPageIndex * galleryPageSize + 1}–${Math.min((galleryPageIndex + 1) * galleryPageSize, selectedPhotos.length)} of ${selectedPhotos.length}`;
+  galleryBack.disabled = galleryPageIndex === 0;
+  galleryForward.disabled = galleryPageIndex === pageCount - 1;
+  [...galleryDots.children].forEach((dot, index) => dot.setAttribute('aria-current', String(index === galleryPageIndex)));
+}
+
+function goToGalleryPage(index, behavior = reducedMotion.matches ? 'instant' : 'smooth') {
+  const lastPage = Math.ceil(selectedPhotos.length / galleryPageSize) - 1;
+  galleryGrid.scrollTo({ left: Math.max(0, Math.min(index, lastPage)) * galleryGrid.clientWidth, behavior });
+}
+
+function buildGalleryPages() {
+  galleryGrid.replaceChildren();
+  galleryDots.replaceChildren();
+  for (let start = 0; start < selectedPhotos.length; start += galleryPageSize) {
+    const page = document.createElement('div');
+    page.className = 'gallery-page';
+    page.setAttribute('role', 'group');
+    page.setAttribute('aria-label', `Photos ${start + 1} to ${Math.min(start + galleryPageSize, selectedPhotos.length)} of ${selectedPhotos.length}`);
+    page.append(...selectedPhotos.slice(start, start + galleryPageSize));
+    galleryGrid.append(page);
+    const dot = document.createElement('button');
+    dot.type = 'button';
+    dot.setAttribute('aria-label', `Go to photos ${start + 1} to ${Math.min(start + galleryPageSize, selectedPhotos.length)}`);
+    dot.setAttribute('aria-controls', 'gallery-grid');
+    dot.addEventListener('click', () => goToGalleryPage(start / galleryPageSize));
+    galleryDots.append(dot);
+  }
+  galleryPageIndex = 0;
+  goToGalleryPage(0, 'instant');
+  updateGalleryPosition();
+}
+
+if (galleryFilters && galleryGrid && galleryDots) {
+  galleryFilters.hidden = false;
+  document.querySelector('.gallery-slider-controls').hidden = false;
+  galleryGrid.classList.add('is-slider');
+  galleryFilters.addEventListener('click', event => {
+    const button = event.target.closest('button[data-filter]');
+    if (!button) return;
+    galleryFilters.querySelectorAll('button').forEach(filter => {
+      filter.setAttribute('aria-pressed', String(filter === button));
+    });
+    selectedPhotos = galleryPhotos.filter(photo => button.dataset.filter === 'all' || photo.dataset.category === button.dataset.filter);
+    buildGalleryPages();
+  });
+  galleryBack.addEventListener('click', () => goToGalleryPage(galleryPageIndex - 1));
+  galleryForward.addEventListener('click', () => goToGalleryPage(galleryPageIndex + 1));
+  galleryGrid.addEventListener('scroll', updateGalleryPosition, { passive: true });
+  window.addEventListener('resize', () => goToGalleryPage(galleryPageIndex, 'instant'));
+  buildGalleryPages();
+}
+
 function showGalleryPhoto(index) {
-  galleryIndex = (index + galleryPhotos.length) % galleryPhotos.length;
-  const photo = galleryPhotos[galleryIndex];
+  galleryIndex = (index + viewerPhotos.length) % viewerPhotos.length;
+  const photo = viewerPhotos[galleryIndex];
   fullPhoto.src = photo.href;
   fullPhoto.alt = photo.querySelector('img').alt;
   document.querySelector('#gallery-caption').textContent = photo.dataset.caption;
-  document.querySelector('#gallery-count').textContent = `${galleryIndex + 1} / ${galleryPhotos.length}`;
+  document.querySelector('#gallery-count').textContent = `${galleryIndex + 1} / ${viewerPhotos.length}`;
   document.querySelector('#gallery-original').href = photo.href;
 }
 
 if (galleryDialog && typeof galleryDialog.showModal === 'function') {
-  galleryPhotos.forEach((photo, index) => {
+  galleryPhotos.forEach(photo => {
     photo.addEventListener('click', event => {
       if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
       event.preventDefault();
       galleryTrigger = photo;
+      viewerPhotos = selectedPhotos;
+      showGalleryPhoto(viewerPhotos.indexOf(photo));
+      galleryDialog.showModal();
+      document.body.classList.add('gallery-open');
+    });
+  });
+  document.querySelectorAll('.footer-photo-set:not([aria-hidden]) .footer-photo').forEach(link => {
+    link.addEventListener('click', event => {
+      if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+      const index = galleryPhotos.findIndex(photo => photo.href === link.href);
+      if (index < 0) return;
+      event.preventDefault();
+      galleryTrigger = link;
+      viewerPhotos = galleryPhotos;
       showGalleryPhoto(index);
       galleryDialog.showModal();
       document.body.classList.add('gallery-open');
@@ -129,5 +209,21 @@ if (galleryDialog && typeof galleryDialog.showModal === 'function') {
   galleryDialog.addEventListener('close', () => {
     document.body.classList.remove('gallery-open');
     galleryTrigger?.focus({preventScroll: true});
+  });
+}
+
+const footerReel = document.querySelector('.footer-reel');
+const footerPause = document.querySelector('#footer-reel-pause');
+if (footerReel && footerPause) {
+  const updateFooterMotion = () => {
+    footerReel.classList.toggle('is-animated', !reducedMotion.matches);
+    footerPause.hidden = reducedMotion.matches;
+  };
+  updateFooterMotion();
+  reducedMotion.addEventListener('change', updateFooterMotion);
+  footerPause.addEventListener('click', () => {
+    const paused = footerReel.classList.toggle('is-paused');
+    footerPause.setAttribute('aria-pressed', String(paused));
+    footerPause.textContent = paused ? 'Resume photos ▷' : 'Pause photos Ⅱ';
   });
 }
