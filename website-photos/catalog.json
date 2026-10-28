@@ -1,0 +1,785 @@
+[
+  {
+    "source": "website-photos/originals/IMG_1253.jpeg",
+    "src": "website-photos/group-crew-lineup-img-1253.webp",
+    "thumb": "website-photos/group-crew-lineup-img-1253.webp",
+    "caption": "A whole crew. A whole spectrum.",
+    "alt": "Riders standing behind a long lineup of bikes glowing in different colors",
+    "category": "rides",
+    "width": 1600,
+    "height": 1200,
+    "label": "group",
+    "series": "same-large-group-gathering",
+    "sources": [
+      "website-photos/originals/IMG_1253.jpeg"
+    ],
+    "in_gallery": false,
+    "filename": "group-crew-lineup-img-1253.webp",
+    "optimized": "website-photos/group-crew-lineup-img-1253.webp",
+    "bytes": 192382,
+    "previous_site_path": "assets/gallery/crew-lineup.jpg"
+  },
+  {
+    "source": "website-photos/originals/IMG_1247.jpeg",
+    "src": "website-photos/group-crew-together-img-1247.webp",
+    "thumb": "website-photos/group-crew-together-img-1247.webp",
+    "caption": "Good nights start with good people.",
+    "alt": "A group of riders behind green, white, and red LED bikes",
+    "category": "rides",
+    "width": 1600,
+    "height": 1200,
+    "label": "group",
+    "series": "same-large-group-gathering",
+    "sources": [
+      "website-photos/originals/IMG_1247.jpeg"
+    ],
+    "in_gallery": true,
+    "filename": "group-crew-together-img-1247.webp",
+    "optimized": "website-photos/group-crew-together-img-1247.webp",
+    "bytes": 256574,
+    "previous_site_path": "assets/gallery/crew-together.jpg"
+  },
+  {
+    "source": "website-photos/originals/IMG_1248.jpeg",
+    "src": "website-photos/group-crew-colors-img-1248.webp",
+    "thumb": "website-photos/group-crew-colors-img-1248.webp",
+    "caption": "Meet you under the lights.",
+    "alt": "The riding crew gathered behind colorful illuminated bikes",
+    "category": "rides",
+    "width": 1600,
+    "height": 1200,
+    "label": "group",
+    "series": "same-large-group-gathering",
+    "sources": [
+      "website-photos/originals/IMG_1248.jpeg"
+    ],
+    "in_gallery": false,
+    "filename": "group-crew-colors-img-1248.webp",
+    "optimized": "website-photos/group-crew-colors-img-1248.webp",
+    "bytes": 219520,
+    "previous_site_path": "assets/gallery/crew-colors.jpg"
+  },
+  {
+    "src": "website-photos/riders-night-ride-crew-original.webp",
+    "caption": "Good company, brighter nights.",
+    "alt": "Two riders with purple LED wheel rings on their bikes",
+    "width": 1400,
+    "height": 1050,
+    "category": "rides",
+    "source": "assets/night-ride-crew.jpg",
+    "thumb": "website-photos/riders-night-ride-crew-original.webp",
+    "label": "riders",
+    "series": "",
+    "sources": [
+      "website-photos/originals/victoria bikes media1.jpeg"
+    ],
+    "in_gallery": true,
+    "filename": "riders-night-ride-crew-original.webp",
+    "optimized": "website-photos/riders-night-ride-crew-original.webp",
+    "bytes": 84728,
+    "previous_site_path": "assets/night-ride-crew.jpg"
+  },
+  {
+    "src": "website-photos/bike-led-cruiser-original.webp",
+    "caption": "A whole new kind of blue.",
+    "alt": "Cyan LED wheel rings on a custom cruiser in a truck bed",
+    "width": 1200,
+    "height": 1600,
+    "category": "lights",
+    "source": "assets/led-cruiser.jpg",
+    "thumb": "website-photos/bike-led-cruiser-original.webp",
+    "label": "bike",
+    "series": "",
+    "sources": [
+      "website-photos/originals/victoria bikes media2.jpeg",
+      "website-photos/originals/hero.jpg"
+    ],
+    "in_gallery": true,
+    "filename": "bike-led-cruiser-original.webp",
+    "optimized": "website-photos/bike-led-cruiser-original.webp",
+    "bytes": 157154,
+    "previous_site_path": "assets/led-cruiser.jpg"
+  },
+  {
+    "src": "website-photos/group-community-ride-original.webp",
+    "caption": "Victoria after dark.",
+    "alt": "Three people riding bikes with pink and purple LEDs at night",
+    "width": 900,
+    "height": 1200,
+    "category": "rides",
+    "source": "assets/community-ride.jpg",
+    "thumb": "website-photos/group-community-ride-original.webp",
+    "label": "group",
+    "series": "",
+    "sources": [
+      "website-photos/originals/victoria bikes media5.jpeg"
+    ],
+    "in_gallery": true,
+    "filename": "group-community-ride-original.webp",
+    "optimized": "website-photos/group-community-ride-original.webp",
+    "bytes": 64214,
+    "previous_site_path": "assets/community-ride.jpg"
+  },
+  {
+    "src": "website-photos/bike-plaza-glow-original.webp",
+    "caption": "A little color around town.",
+    "alt": "Pink-lit bikes and a tricycle parked in front of bronze statues at the plaza",
+    "width": 1600,
+    "height": 1200,
+    "category": "rides",
+    "source": "assets/gallery/plaza-glow.jpg",
+    "thumb": "website-photos/bike-plaza-glow-original.webp",
+    "label": "bike",
+    "series": "",
+    "sources": [
+      "website-photos/originals/victoria bikes media3.jpeg"
+    ],
+    "in_gallery": true,
+    "filename": "bike-plaza-glow-original.webp",
+    "optimized": "website-photos/bike-plaza-glow-original.webp",
+    "bytes": 420310,
+    "previous_site_path": "assets/gallery/plaza-glow.jpg"
+  },
+  {
+    "src": "website-photos/bike-two-tones-original.webp",
+    "caption": "Different rides. Your own glow.",
+    "alt": "Two bikes with red and purple wheel lights parked beside a tree",
+    "width": 1200,
+    "height": 1600,
+    "category": "lights",
+    "source": "assets/gallery/two-tones.jpg",
+    "thumb": "website-photos/bike-two-tones-original.webp",
+    "label": "bike",
+    "series": "",
+    "sources": [
+      "website-photos/originals/victoria bikes media4.jpeg"
+    ],
+    "in_gallery": true,
+    "filename": "bike-two-tones-original.webp",
+    "optimized": "website-photos/bike-two-tones-original.webp",
+    "bytes": 352842,
+    "previous_site_path": "assets/gallery/two-tones.jpg"
+  },
+  {
+    "src": "website-photos/bike-ready-to-roll-original.webp",
+    "caption": "Loaded up. Ready to roll.",
+    "alt": "Two cruisers with purple and cyan LED lights secured in a truck bed",
+    "width": 602,
+    "height": 960,
+    "category": "lights",
+    "source": "assets/gallery/ready-to-roll.jpg",
+    "thumb": "website-photos/bike-ready-to-roll-original.webp",
+    "label": "bike",
+    "series": "",
+    "sources": [
+      "website-photos/originals/facebook-public-ready-to-roll.jpg"
+    ],
+    "in_gallery": true,
+    "filename": "bike-ready-to-roll-original.webp",
+    "optimized": "website-photos/bike-ready-to-roll-original.webp",
+    "bytes": 76854,
+    "previous_site_path": "assets/gallery/ready-to-roll.jpg"
+  },
+  {
+    "source": "website-photos/originals/IMG_4582.jpeg",
+    "src": "website-photos/bike-blue-cruiser-img-4582.webp",
+    "thumb": "website-photos/bike-blue-cruiser-img-4582.webp",
+    "caption": "Electric blue, all the way around.",
+    "alt": "Cruiser with cyan LED wheel rings parked at night",
+    "category": "lights",
+    "width": 1200,
+    "height": 1600,
+    "label": "bike",
+    "series": "",
+    "sources": [
+      "website-photos/originals/IMG_4582.jpeg"
+    ],
+    "in_gallery": true,
+    "filename": "bike-blue-cruiser-img-4582.webp",
+    "optimized": "website-photos/bike-blue-cruiser-img-4582.webp",
+    "bytes": 400908,
+    "previous_site_path": "assets/gallery/blue-cruiser.jpg"
+  },
+  {
+    "source": "website-photos/originals/IMG_4575.jpeg",
+    "src": "website-photos/bike-night-lineup-img-4575.webp",
+    "thumb": "website-photos/bike-night-lineup-img-4575.webp",
+    "caption": "Every ride brings its own color.",
+    "alt": "Colorful illuminated bikes and a pink tricycle lined up at night",
+    "category": "rides",
+    "width": 1600,
+    "height": 1200,
+    "label": "bike",
+    "series": "",
+    "sources": [
+      "website-photos/originals/IMG_4575.jpeg"
+    ],
+    "in_gallery": true,
+    "filename": "bike-night-lineup-img-4575.webp",
+    "optimized": "website-photos/bike-night-lineup-img-4575.webp",
+    "bytes": 332098,
+    "previous_site_path": "assets/gallery/night-lineup.jpg"
+  },
+  {
+    "source": "website-photos/originals/IMG_6270.jpeg",
+    "src": "website-photos/bike-big-flyer-img-6270.webp",
+    "thumb": "website-photos/bike-big-flyer-img-6270.webp",
+    "caption": "Ready for its night shift.",
+    "alt": "Black Big Flyer bike with white LED wheels and frame in a garage",
+    "category": "lights",
+    "width": 1600,
+    "height": 1200,
+    "label": "bike",
+    "series": "",
+    "sources": [
+      "website-photos/originals/IMG_6270.jpeg"
+    ],
+    "in_gallery": true,
+    "filename": "bike-big-flyer-img-6270.webp",
+    "optimized": "website-photos/bike-big-flyer-img-6270.webp",
+    "bytes": 124446,
+    "previous_site_path": "assets/gallery/big-flyer.jpg"
+  },
+  {
+    "source": "website-photos/originals/IMG_4584.jpeg",
+    "src": "website-photos/bike-purple-detail-img-4584.webp",
+    "thumb": "website-photos/bike-purple-detail-img-4584.webp",
+    "caption": "Purple has entered the chat.",
+    "alt": "Angled view of a cruiser with purple and pink LED wheel rings",
+    "category": "lights",
+    "width": 1200,
+    "height": 1600,
+    "label": "bike",
+    "series": "purple-cruiser-night-detail",
+    "sources": [
+      "website-photos/originals/IMG_4584.jpeg"
+    ],
+    "in_gallery": true,
+    "filename": "bike-purple-detail-img-4584.webp",
+    "optimized": "website-photos/bike-purple-detail-img-4584.webp",
+    "bytes": 400982,
+    "previous_site_path": "assets/gallery/purple-detail.jpg"
+  },
+  {
+    "source": "website-photos/originals/IMG_1185.jpeg",
+    "src": "website-photos/bike-curbside-colors-img-1185.webp",
+    "thumb": "website-photos/bike-curbside-colors-img-1185.webp",
+    "caption": "Color around every corner.",
+    "alt": "Green bike in front of a row of colorful LED bikes along a curb",
+    "category": "rides",
+    "width": 1600,
+    "height": 1200,
+    "label": "bike",
+    "series": "",
+    "sources": [
+      "website-photos/originals/IMG_1185.jpeg"
+    ],
+    "in_gallery": true,
+    "filename": "bike-curbside-colors-img-1185.webp",
+    "optimized": "website-photos/bike-curbside-colors-img-1185.webp",
+    "bytes": 331602,
+    "previous_site_path": "assets/gallery/curbside-colors.jpg"
+  },
+  {
+    "source": "website-photos/originals/IMG_1191.jpeg",
+    "src": "website-photos/bike-seaside-wide-img-1191.webp",
+    "thumb": "website-photos/bike-seaside-wide-img-1191.webp",
+    "caption": "Two wheels. An open horizon.",
+    "alt": "Side view of a cruiser beside the beach in daylight",
+    "category": "daylight",
+    "width": 1600,
+    "height": 1200,
+    "label": "bike",
+    "series": "beach-cruiser",
+    "sources": [
+      "website-photos/originals/IMG_1191.jpeg"
+    ],
+    "in_gallery": true,
+    "filename": "bike-seaside-wide-img-1191.webp",
+    "optimized": "website-photos/bike-seaside-wide-img-1191.webp",
+    "bytes": 185174,
+    "previous_site_path": "assets/gallery/seaside-wide.jpg"
+  },
+  {
+    "source": "website-photos/originals/IMG_6301.jpeg",
+    "src": "website-photos/riders-daytime-cruising-img-6301.webp",
+    "thumb": "website-photos/riders-daytime-cruising-img-6301.webp",
+    "caption": "Good company, any time of day.",
+    "alt": "A rider with a black bike on a residential street in daylight",
+    "category": "daylight",
+    "width": 1200,
+    "height": 1600,
+    "label": "riders",
+    "series": "",
+    "sources": [
+      "website-photos/originals/IMG_6301.jpeg"
+    ],
+    "in_gallery": true,
+    "filename": "riders-daytime-cruising-img-6301.webp",
+    "optimized": "website-photos/riders-daytime-cruising-img-6301.webp",
+    "bytes": 508964,
+    "previous_site_path": "assets/gallery/daytime-cruising.jpg"
+  },
+  {
+    "source": "website-photos/originals/IMG_1054.jpeg",
+    "src": "website-photos/bike-shopfront-three-img-1054.webp",
+    "thumb": "website-photos/bike-shopfront-three-img-1054.webp",
+    "caption": "Three rides. Three kinds of glow.",
+    "alt": "Three illuminated bikes parked in front of a storefront",
+    "category": "rides",
+    "width": 1600,
+    "height": 1200,
+    "label": "bike",
+    "series": "three-bikes-outside-storefront",
+    "sources": [
+      "website-photos/originals/IMG_1054.jpeg",
+      "website-photos/originals/IMG_1054 2.jpeg"
+    ],
+    "in_gallery": false,
+    "filename": "bike-shopfront-three-img-1054.webp",
+    "optimized": "website-photos/bike-shopfront-three-img-1054.webp",
+    "bytes": 267664,
+    "previous_site_path": "assets/gallery/shopfront-three.jpg"
+  },
+  {
+    "source": "website-photos/originals/IMG_0406.jpeg",
+    "src": "website-photos/bike-white-green-wheels-img-0406.webp",
+    "thumb": "website-photos/bike-white-green-wheels-img-0406.webp",
+    "caption": "Good company. Brighter wheels.",
+    "alt": "White and green LED bikes parked together at night",
+    "category": "rides",
+    "width": 1600,
+    "height": 1200,
+    "label": "bike",
+    "series": "",
+    "sources": [
+      "website-photos/originals/IMG_0406.jpeg"
+    ],
+    "in_gallery": true,
+    "filename": "bike-white-green-wheels-img-0406.webp",
+    "optimized": "website-photos/bike-white-green-wheels-img-0406.webp",
+    "bytes": 193124,
+    "previous_site_path": "assets/gallery/white-green-wheels.jpg"
+  },
+  {
+    "source": "website-photos/originals/IMG_0816.jpeg",
+    "src": "website-photos/bike-plaza-bikes-img-0816.webp",
+    "thumb": "website-photos/bike-plaza-bikes-img-0816.webp",
+    "caption": "A little glow around the plaza.",
+    "alt": "A row of LED bikes beside a brick plaza wall",
+    "category": "rides",
+    "width": 900,
+    "height": 1600,
+    "label": "bike",
+    "series": "",
+    "sources": [
+      "website-photos/originals/IMG_0816.jpeg"
+    ],
+    "in_gallery": true,
+    "filename": "bike-plaza-bikes-img-0816.webp",
+    "optimized": "website-photos/bike-plaza-bikes-img-0816.webp",
+    "bytes": 120746,
+    "previous_site_path": "assets/gallery/plaza-bikes.jpg"
+  },
+  {
+    "source": "website-photos/originals/IMG_1181.jpeg",
+    "src": "website-photos/bike-white-cruiser-img-1181.webp",
+    "thumb": "website-photos/bike-white-cruiser-img-1181.webp",
+    "caption": "Clean lines. Full glow.",
+    "alt": "Cruiser with white LEDs around its wheels and frame",
+    "category": "lights",
+    "width": 1600,
+    "height": 1200,
+    "label": "bike",
+    "series": "",
+    "sources": [
+      "website-photos/originals/IMG_1181.jpeg"
+    ],
+    "in_gallery": true,
+    "filename": "bike-white-cruiser-img-1181.webp",
+    "optimized": "website-photos/bike-white-cruiser-img-1181.webp",
+    "bytes": 175244,
+    "previous_site_path": "assets/gallery/white-cruiser.jpg"
+  },
+  {
+    "source": "website-photos/originals/IMG_1190.jpeg",
+    "src": "website-photos/bike-seaside-cruiser-img-1190.webp",
+    "thumb": "website-photos/bike-seaside-cruiser-img-1190.webp",
+    "caption": "Sunshine looks good, too.",
+    "alt": "Cruiser parked beside a sunny beach and seawall",
+    "category": "daylight",
+    "width": 1200,
+    "height": 1600,
+    "label": "bike",
+    "series": "beach-cruiser",
+    "sources": [
+      "website-photos/originals/IMG_1190.jpeg"
+    ],
+    "in_gallery": false,
+    "filename": "bike-seaside-cruiser-img-1190.webp",
+    "optimized": "website-photos/bike-seaside-cruiser-img-1190.webp",
+    "bytes": 213080,
+    "previous_site_path": "assets/gallery/seaside-cruiser.jpg"
+  },
+  {
+    "source": "website-photos/originals/IMG_1192.jpeg",
+    "src": "website-photos/bike-gazebo-glow-img-1192.webp",
+    "thumb": "website-photos/bike-gazebo-glow-img-1192.webp",
+    "caption": "Our kind of night out.",
+    "alt": "Colorful LED bikes lined up near a gazebo at night",
+    "category": "rides",
+    "width": 1600,
+    "height": 1200,
+    "label": "bike",
+    "series": "",
+    "sources": [
+      "website-photos/originals/IMG_1192.jpeg"
+    ],
+    "in_gallery": true,
+    "filename": "bike-gazebo-glow-img-1192.webp",
+    "optimized": "website-photos/bike-gazebo-glow-img-1192.webp",
+    "bytes": 161942,
+    "previous_site_path": "assets/gallery/gazebo-glow.jpg"
+  },
+  {
+    "source": "website-photos/originals/IMG_1245.jpeg",
+    "src": "website-photos/group-long-lineup-img-1245.webp",
+    "thumb": "website-photos/group-long-lineup-img-1245.webp",
+    "caption": "The more, the brighter.",
+    "alt": "A long line of illuminated bikes and riders at night",
+    "category": "rides",
+    "width": 1600,
+    "height": 1200,
+    "label": "group",
+    "series": "same-large-group-gathering",
+    "sources": [
+      "website-photos/originals/IMG_1245.jpeg"
+    ],
+    "in_gallery": false,
+    "filename": "group-long-lineup-img-1245.webp",
+    "optimized": "website-photos/group-long-lineup-img-1245.webp",
+    "bytes": 63216,
+    "previous_site_path": "assets/gallery/long-lineup.jpg"
+  },
+  {
+    "source": "website-photos/originals/IMG_1770.jpeg",
+    "src": "website-photos/bike-storefront-wide-img-1770.webp",
+    "thumb": "website-photos/bike-storefront-wide-img-1770.webp",
+    "caption": "A glow worth stopping for.",
+    "alt": "Three bikes with white and purple LEDs outside a storefront",
+    "category": "rides",
+    "width": 1600,
+    "height": 1200,
+    "label": "bike",
+    "series": "three-bikes-outside-storefront",
+    "sources": [
+      "website-photos/originals/IMG_1770.jpeg"
+    ],
+    "in_gallery": false,
+    "filename": "bike-storefront-wide-img-1770.webp",
+    "optimized": "website-photos/bike-storefront-wide-img-1770.webp",
+    "bytes": 234500,
+    "previous_site_path": "assets/gallery/storefront-wide.jpg"
+  },
+  {
+    "source": "website-photos/originals/IMG_1771.jpeg",
+    "src": "website-photos/bike-storefront-angle-img-1771.webp",
+    "thumb": "website-photos/bike-storefront-angle-img-1771.webp",
+    "caption": "Parked up. Still shining.",
+    "alt": "White LED cruiser in front of two other illuminated bikes",
+    "category": "rides",
+    "width": 1600,
+    "height": 1200,
+    "label": "bike",
+    "series": "three-bikes-outside-storefront",
+    "sources": [
+      "website-photos/originals/IMG_1771.jpeg"
+    ],
+    "in_gallery": true,
+    "filename": "bike-storefront-angle-img-1771.webp",
+    "optimized": "website-photos/bike-storefront-angle-img-1771.webp",
+    "bytes": 299408,
+    "previous_site_path": "assets/gallery/storefront-angle.jpg"
+  },
+  {
+    "source": "website-photos/originals/IMG_1772.jpeg",
+    "src": "website-photos/bike-storefront-lights-img-1772.webp",
+    "thumb": "website-photos/bike-storefront-lights-img-1772.webp",
+    "caption": "Bright wheels, late nights.",
+    "alt": "Illuminated cruisers parked on the pavement outside a shop",
+    "category": "rides",
+    "width": 1600,
+    "height": 1200,
+    "label": "bike",
+    "series": "three-bikes-outside-storefront",
+    "sources": [
+      "website-photos/originals/IMG_1772.jpeg"
+    ],
+    "in_gallery": false,
+    "filename": "bike-storefront-lights-img-1772.webp",
+    "optimized": "website-photos/bike-storefront-lights-img-1772.webp",
+    "bytes": 307206,
+    "previous_site_path": "assets/gallery/storefront-lights.jpg"
+  },
+  {
+    "source": "website-photos/originals/IMG_1773.jpeg",
+    "src": "website-photos/bike-storefront-cruisers-img-1773.webp",
+    "thumb": "website-photos/bike-storefront-cruisers-img-1773.webp",
+    "caption": "The glow goes with you.",
+    "alt": "Three illuminated cruisers seen from the side of a storefront",
+    "category": "rides",
+    "width": 1600,
+    "height": 1200,
+    "label": "bike",
+    "series": "three-bikes-outside-storefront",
+    "sources": [
+      "website-photos/originals/IMG_1773.jpeg"
+    ],
+    "in_gallery": false,
+    "filename": "bike-storefront-cruisers-img-1773.webp",
+    "optimized": "website-photos/bike-storefront-cruisers-img-1773.webp",
+    "bytes": 311276,
+    "previous_site_path": "assets/gallery/storefront-cruisers.jpg"
+  },
+  {
+    "source": "website-photos/originals/IMG_4574.jpeg",
+    "src": "website-photos/bike-rainbow-lineup-img-4574.webp",
+    "thumb": "website-photos/bike-rainbow-lineup-img-4574.webp",
+    "caption": "A rainbow on two wheels.",
+    "alt": "Pink, white, and cyan LED bikes lined up under a streetlight",
+    "category": "rides",
+    "width": 1600,
+    "height": 1200,
+    "label": "bike",
+    "series": "",
+    "sources": [
+      "website-photos/originals/IMG_4574.jpeg"
+    ],
+    "in_gallery": false,
+    "filename": "bike-rainbow-lineup-img-4574.webp",
+    "optimized": "website-photos/bike-rainbow-lineup-img-4574.webp",
+    "bytes": 260664,
+    "previous_site_path": "assets/gallery/rainbow-lineup.jpg"
+  },
+  {
+    "source": "website-photos/originals/IMG_4577.jpeg",
+    "src": "website-photos/bike-white-bike-angle-img-4577.webp",
+    "thumb": "website-photos/bike-white-bike-angle-img-4577.webp",
+    "caption": "Follow the frame.",
+    "alt": "White-lit cruiser seen at an angle beside other bikes",
+    "category": "lights",
+    "width": 1200,
+    "height": 1600,
+    "label": "bike",
+    "series": "white-cruiser-night-detail",
+    "sources": [
+      "website-photos/originals/IMG_4577.jpeg"
+    ],
+    "in_gallery": false,
+    "filename": "bike-white-bike-angle-img-4577.webp",
+    "optimized": "website-photos/bike-white-bike-angle-img-4577.webp",
+    "bytes": 335944,
+    "previous_site_path": "assets/gallery/white-bike-angle.jpg"
+  },
+  {
+    "source": "website-photos/originals/IMG_4578.jpeg",
+    "src": "website-photos/bike-white-bike-profile-img-4578.webp",
+    "thumb": "website-photos/bike-white-bike-profile-img-4578.webp",
+    "caption": "Bright from every angle.",
+    "alt": "Side view of a cruiser with white wheel and frame LEDs",
+    "category": "lights",
+    "width": 1200,
+    "height": 1600,
+    "label": "bike",
+    "series": "white-cruiser-night-detail",
+    "sources": [
+      "website-photos/originals/IMG_4578.jpeg",
+      "website-photos/originals/IMG_4578 2.jpeg"
+    ],
+    "in_gallery": true,
+    "filename": "bike-white-bike-profile-img-4578.webp",
+    "optimized": "website-photos/bike-white-bike-profile-img-4578.webp",
+    "bytes": 339670,
+    "previous_site_path": "assets/gallery/white-bike-profile.jpg"
+  },
+  {
+    "source": "website-photos/originals/IMG_4583.jpeg",
+    "src": "website-photos/bike-pink-white-cruiser-img-4583.webp",
+    "thumb": "website-photos/bike-pink-white-cruiser-img-4583.webp",
+    "caption": "A little pink in the mix.",
+    "alt": "Cruiser with white frame lights and pink accents around its wheels",
+    "category": "lights",
+    "width": 1200,
+    "height": 1600,
+    "label": "bike",
+    "series": "white-cruiser-night-detail",
+    "sources": [
+      "website-photos/originals/IMG_4583.jpeg"
+    ],
+    "in_gallery": false,
+    "filename": "bike-pink-white-cruiser-img-4583.webp",
+    "optimized": "website-photos/bike-pink-white-cruiser-img-4583.webp",
+    "bytes": 393986,
+    "previous_site_path": "assets/gallery/pink-white-cruiser.jpg"
+  },
+  {
+    "source": "website-photos/originals/IMG_4585.jpeg",
+    "src": "website-photos/bike-purple-cruiser-img-4585.webp",
+    "thumb": "website-photos/bike-purple-cruiser-img-4585.webp",
+    "caption": "Your own shade of after dark.",
+    "alt": "Purple wheel rings and illuminated frame on a parked cruiser",
+    "category": "lights",
+    "width": 1200,
+    "height": 1600,
+    "label": "bike",
+    "series": "purple-cruiser-night-detail",
+    "sources": [
+      "website-photos/originals/IMG_4585.jpeg"
+    ],
+    "in_gallery": false,
+    "filename": "bike-purple-cruiser-img-4585.webp",
+    "optimized": "website-photos/bike-purple-cruiser-img-4585.webp",
+    "bytes": 417048,
+    "previous_site_path": "assets/gallery/purple-cruiser.jpg"
+  },
+  {
+    "source": "website-photos/originals/IMG_4586.jpeg",
+    "src": "website-photos/bike-white-pink-detail-img-4586.webp",
+    "thumb": "website-photos/bike-white-pink-detail-img-4586.webp",
+    "caption": "Light in every line.",
+    "alt": "White and pink illuminated cruiser viewed from above",
+    "category": "lights",
+    "width": 1200,
+    "height": 1600,
+    "label": "bike",
+    "series": "white-cruiser-night-detail",
+    "sources": [
+      "website-photos/originals/IMG_4586.jpeg"
+    ],
+    "in_gallery": false,
+    "filename": "bike-white-pink-detail-img-4586.webp",
+    "optimized": "website-photos/bike-white-pink-detail-img-4586.webp",
+    "bytes": 388524,
+    "previous_site_path": "assets/gallery/white-pink-detail.jpg"
+  },
+  {
+    "source": "website-photos/originals/IMG_6276.jpeg",
+    "src": "website-photos/riders-purple-night-rider-img-6276.webp",
+    "thumb": "website-photos/riders-purple-night-rider-img-6276.webp",
+    "caption": "Leave a little light behind.",
+    "alt": "A rider and bike surrounded by purple light at night",
+    "category": "rides",
+    "width": 1200,
+    "height": 1600,
+    "label": "riders",
+    "series": "",
+    "sources": [
+      "website-photos/originals/IMG_6276.jpeg"
+    ],
+    "in_gallery": true,
+    "filename": "riders-purple-night-rider-img-6276.webp",
+    "optimized": "website-photos/riders-purple-night-rider-img-6276.webp",
+    "bytes": 96992,
+    "previous_site_path": "assets/gallery/purple-night-rider.jpg"
+  },
+  {
+    "source": "website-photos/originals/IMG_6299.jpeg",
+    "src": "website-photos/riders-daytime-rider-img-6299.webp",
+    "thumb": "website-photos/riders-daytime-rider-img-6299.webp",
+    "caption": "The ride starts before sunset.",
+    "alt": "A rider standing with a black bike on a tree-lined street",
+    "category": "daylight",
+    "width": 1200,
+    "height": 1600,
+    "label": "riders",
+    "series": "",
+    "sources": [
+      "website-photos/originals/IMG_6299.jpeg"
+    ],
+    "in_gallery": true,
+    "filename": "riders-daytime-rider-img-6299.webp",
+    "optimized": "website-photos/riders-daytime-rider-img-6299.webp",
+    "bytes": 500202,
+    "previous_site_path": "assets/gallery/daytime-rider.jpg"
+  },
+  {
+    "source": "website-photos/originals/IMG_1208.jpeg",
+    "src": "website-photos/poster-crew-kenny-img-1208.webp",
+    "thumb": "website-photos/poster-crew-kenny-img-1208.webp",
+    "alt": "VTX Ryders introduction poster for Kenny",
+    "caption": "Kenny crew introduction poster",
+    "label": "poster",
+    "category": "posters",
+    "series": "",
+    "sources": [
+      "website-photos/originals/IMG_1208.jpeg"
+    ],
+    "in_gallery": false,
+    "filename": "poster-crew-kenny-img-1208.webp",
+    "optimized": "website-photos/poster-crew-kenny-img-1208.webp",
+    "bytes": 306312,
+    "width": 1144,
+    "height": 1374,
+    "previous_site_path": "photos/IMG_1208.jpeg"
+  },
+  {
+    "source": "website-photos/originals/IMG_1209.jpeg",
+    "src": "website-photos/poster-crew-linda-img-1209.webp",
+    "thumb": "website-photos/poster-crew-linda-img-1209.webp",
+    "alt": "VTX Ryders introduction poster for Linda",
+    "caption": "Linda crew introduction poster",
+    "label": "poster",
+    "category": "posters",
+    "series": "",
+    "sources": [
+      "website-photos/originals/IMG_1209.jpeg"
+    ],
+    "in_gallery": false,
+    "filename": "poster-crew-linda-img-1209.webp",
+    "optimized": "website-photos/poster-crew-linda-img-1209.webp",
+    "bytes": 349436,
+    "width": 1144,
+    "height": 1374,
+    "previous_site_path": "photos/IMG_1209.jpeg"
+  },
+  {
+    "source": "website-photos/originals/IMG_1213.jpeg",
+    "src": "website-photos/poster-crew-toni-img-1213.webp",
+    "thumb": "website-photos/poster-crew-toni-img-1213.webp",
+    "alt": "VTX Ryders introduction poster for Toni",
+    "caption": "Toni crew introduction poster",
+    "label": "poster",
+    "category": "posters",
+    "series": "",
+    "sources": [
+      "website-photos/originals/IMG_1213.jpeg"
+    ],
+    "in_gallery": false,
+    "filename": "poster-crew-toni-img-1213.webp",
+    "optimized": "website-photos/poster-crew-toni-img-1213.webp",
+    "bytes": 376834,
+    "width": 1144,
+    "height": 1374,
+    "previous_site_path": "photos/IMG_1213.jpeg"
+  },
+  {
+    "source": "website-photos/originals/IMG_1215.jpeg",
+    "src": "website-photos/poster-crew-adrianna-img-1215.webp",
+    "thumb": "website-photos/poster-crew-adrianna-img-1215.webp",
+    "alt": "VTX Ryders introduction poster for Adrianna",
+    "caption": "Adrianna crew introduction poster",
+    "label": "poster",
+    "category": "posters",
+    "series": "",
+    "sources": [
+      "website-photos/originals/IMG_1215.jpeg"
+    ],
+    "in_gallery": false,
+    "filename": "poster-crew-adrianna-img-1215.webp",
+    "optimized": "website-photos/poster-crew-adrianna-img-1215.webp",
+    "bytes": 365796,
+    "width": 1254,
+    "height": 1254,
+    "previous_site_path": "photos/IMG_1215.jpeg"
+  }
+]

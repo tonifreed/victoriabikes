@@ -148,7 +148,7 @@ if (galleryFilters && galleryGrid && galleryDots) {
     galleryFilters.querySelectorAll('button').forEach(filter => {
       filter.setAttribute('aria-pressed', String(filter === button));
     });
-    selectedPhotos = galleryPhotos.filter(photo => button.dataset.filter === 'all' || photo.dataset.category === button.dataset.filter);
+    selectedPhotos = galleryPhotos.filter(photo => button.dataset.filter === 'all' || photo.dataset.category === button.dataset.filter || (button.dataset.filter === 'groups' && photo.dataset.group === 'true'));
     buildGalleryPages();
   });
   galleryBack.addEventListener('click', () => goToGalleryPage(galleryPageIndex - 1));
@@ -227,3 +227,11 @@ if (footerReel && footerPause) {
     footerPause.textContent = paused ? 'Resume photos ▷' : 'Pause photos Ⅱ';
   });
 }
+
+// Keep sound from multiple ride videos from overlapping.
+document.addEventListener('play', event => {
+  if (!(event.target instanceof HTMLVideoElement)) return;
+  document.querySelectorAll('video').forEach(video => {
+    if (video !== event.target) video.pause();
+  });
+}, true);
